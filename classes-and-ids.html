@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Internal CSS</title>
+    <style>
+      body {
+        background-color: #f5f5f5;
+        color: midnightblue;
+      }
+
+      /*
+      This styles every ul that is inside the nav (due to descendant selectors)
+      to have no bullet points beside each list item in the ul.
+      */
+
+      nav ul {
+        list-style: none;
+      }
+
+      /*
+      This styling every list item in the ul that is in the nav to have 10px of margin and a font size of 20px.
+      */
+
+      nav li {
+        display: inline-block;
+        margin: 10px;
+        font-size: 20px;
+      }
+
+      /*
+      This styles the multiple elements with a class of nav-link to have 4px of margin, a 2px border that is a solid black line, padding of 5px,
+      a background color of #191970, and a font color of #f5f5ff.
+      */
+
+      .nav-link {
+        margin: 4px;
+        border: 2px-solid black;
+        padding: 5px;
+
+        background: color #191970;
+        color: #f5f5f5;
+      }
+
+      /* .nav-a {
+        margin: 4px;
+        border: 2px-solid black;
+        padding: 5px;
+
+        background: color #191970;
+        color:#f5f5f5;
+      } */
+
+      h1 {
+        text-align: center;
+        font-size: 40px;
+      }
+
+      p {
+        font: size 24px;
+      }
+
+      /*
+      This styles one element with an ID of styled-by-id to use the Georgia font. If the Georgia font cannot be used, it uses Times New Roman.
+      If Times New Roman cannot used, Cambria is used. If Camrbia cannot be used, the default serif font built into the browser is used.
+      It also styles the text to be bolded.
+       */
+
+      #styled-by id {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inline CSS</a></li>
+        <li><a href="internal-css.html">Internal CSS</a></li>
+        <li><a href="external-css.html">External CSS</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1 style="text-align: center; font-size: 40px">
+        Internal CSS
+      </h1>
+
+      <p>
+        This page shows the effects of adding internal CSS to a web
+        page.
+      </p>
+
+      <p>
+        Does this paragraph have the same styling as my other
+        paragraph?
+      </p>
+      <p id="styled-by-id">
+        This paragraph will show the effect of giving an element an ID
+        and styling that ID.
+      </p>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Typography Principles</title>
+    <style>
+      /* This needs to be in every external stylesheet you create from now on */
+      * {
+        line-height: 150%;
+      }
+
+      /* This needs to be in every external stylesheet you create from now on */
+      html {
+        font-size: 62.5%;
+      }
+
+      body {
+        background-color: #f5f5f5;
+        color: midnightblue;
+
+        font-family: "Times New Roman", "Georgia", serif;
+
+        font-size: 2.4rem;
+      }
+
+      nav ul {
+        list-style: none;
+      }
+
+      nav li {
+        display: inline-block;
+        margin: 10px;
+      }
+
+      .nav-link {
+        margin: 4px;
+        border: 2px-solid black;
+        padding: 5px;
+
+        background-color: #191970;
+        color: #f5f5f5;
+
+        text-decoration: none;
+
+        font-size: 2rem;
+      }
+
+      h1 {
+        text-align: center;
+
+        font-size: 4.8rem;
+      }
+
+      /*
+      This styles all divs on the web page to have a background color of light blue, sets the div to use the automatic width of the div,
+      and sets the height to 200px. This also styles the border to have a width of 4px with a solid black line, rounds the corners of the div to have a radius of 5px,
+      and adds 10px of padding to the top and bottom of the div, as well as 20px of padding on the left and right. Finally, aligns the text center.
+      */
+
+      div {
+        background-color: #d4ebf2;
+        width: auto;
+        border: 4px solid black;
+        border-radius: 5px;
+        padding: 10px 20px;
+        text-align: center;
+      }
+
+      p {
+        color: #313131;
+      }
+
+      #styled-by-id {
+        font-family: Georgia, "Times New Roman", Times, serif;
+        font-weight: bold;
+      }
+
+      /*
+      This styles all spans on the web page to underline the text inside
+      the span and change the text to be italicized.
+      */
+
+      span {
+        text-decoration: underline;
+        font-style: italic;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <ul>
+        <li><a href="index.html" class="nav-link">Inline CSS</a></li>
+        <li>
+          <a href="internal-css.html" class="nav-link">
+            Internal CSS
+          </a>
+        </li>
+        <li>
+          <a href="external-css.html" class="nav-link">
+            External CSS
+          </a>
+        </li>
+        <li>
+          <a href="playing-with-external.html" class="nav-link">
+            Playing with External CSS
+          </a>
+        </li>
+        <li>
+          <a href="testing-cascading.html" class="nav-link">
+            Testing Cascading
+          </a>
+        </li>
+        <li>
+          <a href="classes-and-ids.html" class="nav-link">
+            Classes and IDs
+          </a>
+        </li>
+        <li>
+          <a href="div-and-span.html" class="nav-link">
+            Divs and Spans
+          </a>
+        </li>
+        <li>
+          <a href="typography.html" class="nav-link">Typography</a>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Typography</h1>
+
+      <!--
+        NOTE: This is NOT the proper way to use a div because I have not used all the proper semantic tags yet.
+        This is a div, which is short for division. It is a block element that acts like a container for multiple block elements.
+      -->
+      <div>
+        <p>
+          This page shows us trying to follow Typography Design
+          Principles.
+        </p>
+
+        <p>
+          Does this paragraph have the same styling as my other
+          paragraph?
+        </p>
+
+        <!--
+          This demostrates the of span, which is an inline element used to group multiple inline elements. It can also be used to style specific
+          words or sets of words inside other HTML elements, which is how it is being used in this context.
+        -->
+        <p id="styled-by-id">
+          This paragraph will show the effect of giving an element an
+          ID and
+          <span>styling </span>that ID.
+        </p>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+          do eiusmod tempor incididunt ut labore et dolore magna
+          aliqua. Aliquam etiam erat velit scelerisque in dictum non.
+          In est ante in nibh. Vitae nunc sed velit dignissim sodales.
+          Placerat duis ultricies lacus sed turpis tincidunt id
+          aliquet. Purus in massa tempor nec feugiat. Tincidunt tortor
+          aliquam nulla facilisi cras. Vitae congue eu consequat ac
+          felis donec et odio. Vel facilisis volutpat est velit.
+          Pharetra massa massa ultricies mi. Maecenas pharetra
+          convallis posuere morbi. Diam ut venenatis tellus in metus
+          vulputate eu scelerisque. Netus et malesuada fames ac turpis
+          egestas maecenas pharetra convallis. Ultrices in iaculis
+          nunc sed augue lacus. Turpis in eu mi bibendum neque egestas
+          congue quisque. Lorem sed risus ultricies tristique nulla.
+        </p>
+        <p>
+          Dui nunc mattis enim ut tellus elementum. Integer eget
+          aliquet nibh praesent tristique magna. Iaculis urna id
+          volutpat lacus. Ut eu sem integer vitae justo. Nunc eget
+          lorem dolor sed viverra ipsum. Venenatis cras sed felis
+          eget. Auctor neque vitae tempus quam. Nisl tincidunt eget
+          nullam non nisi est sit. In hac habitasse platea dictumst
+          quisque sagittis purus sit. Odio tempor orci dapibus
+          ultrices. Vitae semper quis lectus nulla at volutpat diam ut
+          venenatis. Sed arcu non odio euismod lacinia. A lacus
+          vestibulum sed arcu non odio euismod lacinia.
+        </p>
+        <p>
+          Orci phasellus egestas tellus rutrum tellus pellentesque eu.
+          Euismod elementum nisi quis eleifend quam. Ipsum a arcu
+          cursus vitae congue. Quam elementum pulvinar etiam non quam
+          lacus suspendisse. Est lorem ipsum dolor sit amet
+          consectetur adipiscing. Tellus in hac habitasse platea
+          dictumst vestibulum. Lectus urna duis convallis convallis.
+          Morbi tristique senectus et netus et malesuada fames ac.
+          Volutpat diam ut venenatis tellus in metus vulputate eu.
+          Amet mauris commodo quis imperdiet massa tincidunt. Ut
+          aliquam purus sit amet. Tincidunt lobortis feugiat vivamus
+          at augue eget. Diam ut venenatis tellus in metus vulputate
+          eu scelerisque. Sit amet dictum sit amet justo. Eleifend
+          donec pretium vulputate sapien nec sagittis aliquam
+          malesuada bibendum. Nulla facilisi morbi tempus iaculis urna
+          id. Consequat interdum varius sit amet mattis vulputate.
+        </p>
+      </div>
+    </main>
+  </body>
+</html>
